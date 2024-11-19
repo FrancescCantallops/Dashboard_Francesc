@@ -1,0 +1,96 @@
+#page {
+
+    display: grid;
+    /* 100% de la pàgina d'amplada i llargària */
+    width: 100vw;
+    height: 100vh;
+    /* Files i columnes */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* Distribució de les àrees dintre de la "graella" */
+    grid-template-areas:
+    "head head head head head head head head head head"
+    "notion notion video video video imatge imatge imatge moodle moodle"
+    "notion notion video video video imatge imatge imatge moodle moodle"
+    "over over yt yt links links calendari calendari classroom classroom"
+    "over over yt yt links links calendari calendari classroom classroom"
+    "canva canva spot spot links links entregues entregues drive drive"
+    "canva canva spot spot links links entregues entregues drive drive";
+}
+
+#page > header {
+    grid-area: head;
+    background-color: #0000FF;
+}
+
+#page > notion {
+    grid-area: notion;
+    border-top-left-radius: 100px;
+}
+
+#page > vid {
+    grid-area: video;
+    background-color: red;
+}
+
+#page > imatge {
+    grid-area: imatge;
+    background-color: green;
+}
+
+#page > moodle {
+    grid-area: moodle;
+    border-top-right-radius: 100px;
+}
+
+#page > overleaf {
+    grid-area: over;
+}
+
+#page > yt {
+    grid-area: yt;
+}
+
+#page > links {
+    grid-area: links;
+    border-radius: 50px;
+    background-color: #00FFFF;
+}
+
+#page > calendari {
+    grid-area: calendari;
+}
+
+#page > classroom {
+    grid-area: classroom;
+}
+
+#page > canva {
+    grid-area: canva;
+}
+
+#page > spotify {
+    grid-area: spot;
+}
+
+#page > entregues {
+    grid-area: entregues;
+
+}
+
+#page > drive {
+    grid-area: drive;
+    border-bottom-right-radius: 100px;
+}
+
+h1{
+    font-size: 48px;
+    text-align: center;
+    font-family: "Bitstream Vera Sans Mono";
+    color: #FFFFFF;
+}
+
+.contingut{
+    margin: 10px;
+    text-align: center;
+}
